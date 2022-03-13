@@ -1,104 +1,81 @@
 import React from "react";
 import { View, Image, Text, Dimensions } from "react-native";
-import LottieView from 'lottie-react-native';
 
 export default function TabOneScreen() {
   return (
     <View
       style={{
         flex: 1,
-        backgroundColor: '#fff',
-        justifyContent: 'center',
-        paddingHorizontal: 20
+        backgroundColor: '#273746',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}
     >
       <View style={{
-        flex: 1,
+        height: Dimensions.get('screen').height * 0.5,
+        width: '80%',
+        backgroundColor: 'white',
+        padding: 10,
+        borderRadius: 10
       }}>
-        <LottieView
-          source={require('../assets/lottie/39476-login-screen.json')}
-          autoPlay={true}
-          loop={true}
+        <View
           style={{
             flex: 1,
+            backgroundColor: 'red',
+            marginBottom: 10,
+            borderRadius: 10,
+            overflow: 'hidden'
           }}
-        />
-      </View>
-      <View style={{
-        flex: 1,
-      }}>
-        <View style={{
-          flex: 0
-        }}>
-          <Text>
-            Email
-          </Text>
-          <View style={{
-            height: 50,
-            width: '100%',
-            marginBottom: 20,
-            borderWidth: 1,
-            borderRadius: 10
-          }}>
-
-          </View>
-        </View>
-
-        <View style={{
-          flex: 0,
-          marginBottom: 40
-        }}>
-          <Text>
-            Password
-          </Text>
-          <View style={{
-            height: 50,
-            width: '100%',
-            borderWidth: 1,
-            borderRadius: 10
-          }}>
-
-          </View>
-        </View>
-        <View style={{
-          flex: 0,
-        }}>
-
-          <View style={{
-            flex: 0
-          }}>
-            <View style={{
-              height: 50,
+        >
+          <Image
+            style={{
+              height: '100%',
               width: '100%',
-              justifyContent: 'center',
-              alignItems: 'center',
-              borderRadius: 10,
-              backgroundColor: '#2381EE'
-            }}>
-              <Text style={{
-                fontSize: 18,
-                color: '#fff'
-              }}>
-                Submit
-              </Text>
-            </View>
-          </View>
+              resizeMode: 'cover'
+            }}
+            source={require('../assets/images/goldenwind.jpg')}
+          />
         </View>
-
-      </View>
-      <View style={{
-        height: 50,
-        width: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 10,
-        paddingBottom: 20
-      }}>
-        <Text style={{
-          fontSize: 18
-        }}>
-          Create an account?
-        </Text>
+        <View
+          style={{
+            flex: 0,
+            backgroundColor: '#E9DBD8',
+            paddingVertical: 10,
+            paddingHorizontal: 10,
+            marginBottom: 10,
+            borderRadius: 10,
+          }}
+        >
+          <Text
+            style={{
+              color: '#877D7B',
+              fontFamily: 'poppins-bold',
+              fontSize: 18,
+            }}
+            numberOfLines={1}
+          >
+            My NFT Card
+          </Text>
+        </View>
+        <View
+          style={{
+            flex: 0,
+            minHeight: 100,
+            maxHeight: 200,
+            backgroundColor: 'white',
+            padding: 5,
+          }}
+        >
+          <Text
+            style={{
+              fontFamily: 'poppins-regular',
+              color: '#877D7B',
+              fontSize: 14
+            }}
+          >
+            Golden Wind, also known as Vento Aureo, is the fifth story arc of the Japanese manga series JoJo's Bizarre Adventure, written and illustrated by Hirohiko Araki. It was serialized in Weekly Shōnen Jump for a little under 4 years, from November 20, 1995, to April 5, 1999.
+          </Text>
+        </View>
       </View>
     </View>
   );
