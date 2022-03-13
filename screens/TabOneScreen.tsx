@@ -19,7 +19,7 @@ export default function TabOneScreen() {
       </TouchableOpacity>
       <Text style={styles.basictext}>No Account yet?</Text>
       <TouchableOpacity style={styles.btnSignUp}>
-        <Text style={styles.btnText}>Sign-up</Text>
+        <Text style={styles.btnText}>Sign Up</Text>
       </TouchableOpacity>
     </View>
   )
